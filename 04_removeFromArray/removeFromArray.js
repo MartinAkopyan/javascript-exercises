@@ -1,8 +1,6 @@
 const removeFromArray = function(arr, ...args) {
 		for (let j = 0; j < args.length; j++) {
-			// console.log(args[j])
 			if (arr.indexOf(args[j]) !== -1) {
-				// delete arr[arr.indexOf(args[j])];
 				arr.splice(arr.indexOf(args[j]), 1)
 			}
 		}
@@ -18,4 +16,4 @@ const removeFromArray = function(arr, ...args) {
 console.log(removeFromArray(["hey", 2, 3, "ho"], "hey", 3))
 
 // Do not edit below this line
-// module.exports = removeFromArray;
+module.exports = removeFromArray;
